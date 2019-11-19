@@ -1,19 +1,19 @@
 <h1 align="center">
-  Gatsby x Tailwind x Framer Motion Boilerplate
+  STAV Marketing Website
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7e52dbac-aec4-4a56-864f-e33649fadc9b/deploy-status)](https://app.netlify.com/sites/gatsby-tailwind-motion/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/baa56e5d-91b2-4a76-9df9-d03fa9b3df5f/deploy-status)](https://app.netlify.com/sites/stav/deploys)
 
-Gatsby + Tailwind + Framer Motion powered boilerplate
+Gatsby + Tailwind + Framer Motion + DatoCMS powered marketing website for STAV.
 
-[https://gatsby-tailwind-motion.netlify.com](https://gatsby-tailwind-motion.netlify.com)
+[https://stav.netlify.com/](https://stav.netlify.com/)
 
 ## 🚀 Quick start
 
 1.  **Clone the repo**
 
     ```sh
-    git clone https://github.com/samuelgoddard/gatsby-tailwind-motion
+    git clone https://github.com/samuelgoddard/stav
     ```
 
 1.  **Start developing.**
@@ -21,13 +21,14 @@ Gatsby + Tailwind + Framer Motion powered boilerplate
     Navigate into your new site’s directory and install the local dependencies.
 
     ```sh
+    cd stav
     yarn
     ```
 
     Start developing locally (with gatsby-cli).
 
     ```sh
-    cd gatsby-tailwind-motion/
+    cd stav
     gatsby develop
     ```
 

@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-tailwind-motion",
-  "private": false,
+  "name": "stav",
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Sam Goddard <hello@samgoddard.co.uk>",
   "dependencies": {
     "framer-motion": "^1.6.8",
@@ -32,22 +31,16 @@
     "tailwindcss": "^1.1.2",
     "tailwindcss-transition": "^1.0.5"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "framer",
-    "motion"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samuelgoddard/gatsby-tailwind-motion"
+    "url": "https://github.com/samuelgoddard/stav"
   }
 }
