@@ -1,8 +1,7 @@
-import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import React from "react"
 import { motion } from 'framer-motion'
-import Nav from '../components/nav'
 
 const Header = ({ siteTitle }) => (
   <header className="py-8 md:py-16">
@@ -24,8 +23,26 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
 
-      <Nav />
-
+      <nav>
+        <ul className="flex flex-wrap">
+          <li>
+            <Link
+              activeClassName="is--active"
+              className="link mr-3"
+              to="/">
+                Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClassName="is--active"
+              className="link mr-3"
+              to="/about">
+                About
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 )
