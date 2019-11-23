@@ -1,14 +1,17 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header className="h-16 md:h-24 items-end flex flex-wrap">
+const Header = () => (
+  <header className="h-20 md:h-24 items-end flex flex-wrap">
     <div className="w-full">
       <div className="container">
         <div className="flex flex-wrap items-center">
-          <Link className="font-bold block text-lg md:text-xl inline-block" to="/">
-            {siteTitle}
+          <Link
+            className="font-bold block sm:text-lg md:text-xl block  bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 p-3"
+            to="/"
+          >
+            <span className="block sm:hidden">SA</span>
+            <span className="hidden sm:block">Student Availability</span>
           </Link>
 
           <nav className="ml-auto">
@@ -16,18 +19,19 @@ const Header = ({ siteTitle }) => (
               <li>
                 <Link
                   activeClassName="is--active"
-                  className="link mr-3"
-                  to="/about">
-                    About
+                  className="link mr-5"
+                  to="/about"
+                >
+                  About
                 </Link>
               </li>
               <li>
-                <Link
-                  activeClassName="is--active"
-                  className="link mr-3"
-                  to="/">
-                    Signup
-                </Link>
+              <Link
+                activeClassName="is--active"
+                className="btn mr-0"
+                to="/signup">
+                Signup
+              </Link>
               </li>
             </ul>
           </nav>
@@ -36,13 +40,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

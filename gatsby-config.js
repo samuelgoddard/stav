@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -16,13 +16,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        tailwind: true, 
+        tailwind: true,
         whitelistPatterns: [/is-active/],
-      }
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

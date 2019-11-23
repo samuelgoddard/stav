@@ -1,7 +1,8 @@
-const tailwindcss = require("tailwindcss");
-const postcssImport = require("postcss-import");
-const postcssResolver = require("postcss-import-resolver");
-const postcssNested = require("postcss-nested");
+const tailwindcss = require("tailwindcss")
+const postcssImport = require("postcss-import")
+const postcssResolver = require("postcss-import-resolver")
+const postcssNested = require("postcss-nested")
+const autoprefixer = require('autoprefixer')
 
 module.exports = () => ({
   plugins: [
@@ -12,6 +13,7 @@ module.exports = () => ({
       }),
     }),
     tailwindcss("./tailwind.config.js"),
-    postcssNested({ unwrap: ["screen"] })
+    postcssNested({ unwrap: ["screen"] }),
+    autoprefixer(),
   ],
 })

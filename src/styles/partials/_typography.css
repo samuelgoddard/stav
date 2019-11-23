@@ -12,11 +12,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	@apply text-xl;
+	@apply text-3xl;
+
+  @screen md {
+    @apply text-4xl;
+  }
 }
 
 h2 {
-	@apply text-lg;
+  @apply text-2xl;
+
+  @screen md {
+	  @apply text-3xl;
+  }
 }
 
 .page-title {
@@ -31,9 +39,21 @@ h2 {
   }
 }
 
+.page-title--large {
+  @apply text-4xl;
+
+  @screen md {
+    @apply text-5xl;
+  }
+  
+  @screen lg {
+    @apply text-6xl;
+  }
+}
+
 /* Link */
 .link {
-  @apply text-black underline transition;
+  @apply text-black underline;
 
   &:hover, &:focus {
     @apply text-gray-600;
@@ -44,15 +64,39 @@ h2 {
   }
 }
 
+.btn {
+  @apply bg-black text-white rounded p-4 cursor-pointer no-underline;
+
+  &:hover, &:focus {
+    @apply bg-gray-700;
+  }
+  
+  &.is--active {
+    @apply bg-red-700;
+  }
+}
+
+.btn--small {
+  @apply p-3;
+}
+
 /* Content */
 .content {
   /* Paragraph */
   p {
     @apply mb-4 leading-relaxed;
+
+    &:first-of-type {
+      @apply text-lg;
+    }
   }
 
   /* Headings following paragraphs */
   p + h1, p + h2, p + h3, p + h4 {
     @apply pt-6 block;
+  }
+
+  a {
+    @apply underline;
   }
 }

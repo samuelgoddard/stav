@@ -23,7 +23,7 @@ const item = {
   },
 }
 
-const NotFoundPage = () => {
+const TermsConditionsPage = () => {
   return (
     <>
       <SEO title="Terms & Conditions" />
@@ -39,7 +39,7 @@ const NotFoundPage = () => {
               <div className="w-full md:w-10/12 lg:w-8/12 mx-auto">
                 <motion.div variants={item} transition="easeInOut">
                   <h1 className="page-title page-title--large mb-5 lg:mb-8">
-                    Page Not Found
+                    Terms &amp; Conditions
                   </h1>
                 </motion.div>
 
@@ -48,7 +48,7 @@ const NotFoundPage = () => {
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p>We're Sorry but that page could not be found. Please return <Link to="/">home</Link> to continue browsing the site.</p>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
                 </motion.div>
               </div>
             </div>
@@ -61,4 +61,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default TermsConditionsPage
