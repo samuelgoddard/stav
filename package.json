@@ -23,6 +23,7 @@
     "tailwindcss-transitions": "^2.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "gatsby-plugin-purgecss": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-import-resolver": "^1.2.3",
