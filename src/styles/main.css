@@ -15,3 +15,23 @@
 
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
+
+.fill-screen {
+  min-height: calc(100vh - theme('spacing.16'));
+
+  @screen md {
+    min-height: calc(100vh - theme('spacing.24'));
+  }
+}
+
+.phone { 
+  margin-bottom: -20vw;
+
+  @screen lg {
+    margin-bottom: -22vw;
+  }
+
+  @screen xl {
+    margin-bottom: -18vw;
+  }
+}

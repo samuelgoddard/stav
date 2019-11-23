@@ -1,5 +1,5 @@
 body {
-  @apply font-mono antialiased;
+  @apply font-sans antialiased;
 }
 
 /* Headings */
@@ -19,6 +19,18 @@ h2 {
 	@apply text-lg;
 }
 
+.page-title {
+  @apply text-3xl;
+
+  @screen md {
+    @apply text-4xl;
+  }
+  
+  @screen lg {
+    @apply text-5xl;
+  }
+}
+
 /* Link */
 .link {
   @apply text-black underline transition;
@@ -34,10 +46,9 @@ h2 {
 
 /* Content */
 .content {
-  
   /* Paragraph */
   p {
-    @apply mb-6;
+    @apply mb-4 leading-relaxed;
   }
 
   /* Headings following paragraphs */
