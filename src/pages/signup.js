@@ -24,7 +24,7 @@ const item = {
 
 const SignupPage = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Signup" />
 
     <motion.div
       variants={container}

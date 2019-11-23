@@ -2,7 +2,6 @@ import React from "react"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import { motion } from "framer-motion"
-import { Link } from "gatsby"
 
 const duration = 0.35
 
