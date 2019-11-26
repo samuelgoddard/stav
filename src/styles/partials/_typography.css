@@ -56,23 +56,44 @@ h2 {
   @apply text-black underline;
 
   &:hover, &:focus {
-    @apply text-gray-600;
+    @apply text-black;
   }
 
   &.is--active {
-    @apply text-red-700;
+    @apply text-primary;
+  }
+}
+
+.arrow {
+  @apply absolute top-0 left-0 max-w-tiny z-10;
+  margin-top: 10%;
+  margin-left: 10%;
+
+  @screen md {
+    @apply mt-12 ml-12;
+  }
+}
+
+.coming-soon {
+  @apply absolute bottom-0 right-0 max-w-sm z-10 bg-tertiary text-white uppercase rounded-full flex flex-wrap items-center justify-center w-24 h-24 text-center text-sm;
+  margin-bottom: 7%;
+  margin-right: 7%;
+  transform: rotate(12deg);
+
+  @screen md {
+    @apply mb-6 mr-6 w-32 h-32 text-base;
   }
 }
 
 .btn {
-  @apply bg-black text-white rounded p-4 cursor-pointer no-underline;
+  @apply bg-primary text-white rounded p-4 cursor-pointer no-underline uppercase text-base;
 
   &:hover, &:focus {
-    @apply bg-gray-700;
+    @apply bg-black;
   }
   
   &.is--active {
-    @apply bg-red-700;
+    @apply bg-black;
   }
 }
 
@@ -84,16 +105,20 @@ h2 {
 .content {
   /* Paragraph */
   p {
-    @apply mb-4 leading-relaxed;
+    @apply mb-5 leading-relaxed;
 
     &:first-of-type {
       @apply text-lg;
+    }
+
+    @screen md {
+      @apply mb-8;
     }
   }
 
   /* Headings following paragraphs */
   p + h1, p + h2, p + h3, p + h4 {
-    @apply pt-6 block;
+    @apply pt-8 block;
   }
 
   a {

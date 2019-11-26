@@ -29,7 +29,7 @@ const variants = {
 
 const Layout = ({ children, location }) => {
   return (
-    <>
+    <div className="bg-secondary">
       <Header />
       <AnimatePresence>
         <motion.main
@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
           {children}
         </motion.main>
       </AnimatePresence>
-    </>
+    </div>
   )
 }
 

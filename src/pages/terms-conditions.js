@@ -22,10 +22,10 @@ const item = {
   },
 }
 
-const TermsConditionsPage = () => {
+const TermsConditionsPage = ({ data: { terms }}) => {
   return (
     <>
-      <SEO title="Terms & Conditions" />
+      <SEO title="Privacy" />
 
       <motion.div
         variants={container}
@@ -33,21 +33,21 @@ const TermsConditionsPage = () => {
         animate="visible"
       >
         <section className="pt-24 md:pt-32 pb-12 md:pb-20">
-          <div className="container relative text-center">
+          <div className="container relative">
             <div className="flex flex-wrap">
-              <div className="w-full md:w-10/12 lg:w-8/12 mx-auto">
+              <div className="w-full md:w-10/12 mx-auto">
                 <motion.div variants={item} transition="easeInOut">
-                  <h1 className="page-title page-title--large mb-5 lg:mb-8">
-                    Terms &amp; Conditions
+                  <h1 className="page-title page-title--large mb-8 lg:mb-12 text-center">
+                    { terms.title }
                   </h1>
                 </motion.div>
 
                 <motion.div
-                  className="content mb-8 md:mb-12 px-6 lg:px-16"
+                  className="content mb-8 md:mb-12 lg:px-16"
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+                  <p dangerouslySetInnerHTML={{__html:terms.content}}></p>
                 </motion.div>
               </div>
             </div>
@@ -61,3 +61,12 @@ const TermsConditionsPage = () => {
 }
 
 export default TermsConditionsPage
+
+export const query = graphql`
+  query TermsQuery {
+    terms: datoCmsTermsCondition {
+      title
+      content
+    }
+  }
+`

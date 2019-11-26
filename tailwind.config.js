@@ -20,10 +20,26 @@ module.exports = {
         },
       },
     }),
+    colors: {
+      black: '#000000',
+      white: '#FFFFFF',
+      primary: {
+        default: '#5c33a2' // Purple
+      },
+      secondary: {
+        default: '#FFBA00' // Yellow
+      },
+      tertiary: {
+        default: '#f25e21' // Orange
+      }
+    },
     extend: {
       fontFamily: {
         sans: ["OldschoolGrotesk", "Helvetica", "Arial", "sans-serif"],
       },
+      maxWidth: {
+        'tiny': '4.5rem'
+      }
     },
   },
   plugins: [

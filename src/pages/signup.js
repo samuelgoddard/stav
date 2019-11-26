@@ -38,7 +38,7 @@ const SignupPage = () => (
               <div className="text-center">
                 <motion.div variants={item} transition="easeInOut">
                   <h1 className="page-title page-title--large mb-5 lg:mb-8">
-                    Signup
+                    Stay in the know
                   </h1>
                 </motion.div>
 
@@ -47,14 +47,11 @@ const SignupPage = () => (
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p className="md:text-lg">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.
-                  </p>
+                  <p className="md:text-lg">We’re launching soon! Sign up to our mailing list and we’ll send you updates.</p>
                 </motion.div>
               </div>
               <motion.div variants={item} transition="easeInOut">
-                <div id="mc_embed_signup" className="w-full">
+                <div id="mc_embed_signup" className="w-full mb-6 md:mb-8">
                   <form action="https://interactstud.us4.list-manage.com/subscribe/post?u=5547423e5d127cb1c3a401e33&amp;id=21217c2755" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                   <div id="mc_embed_signup_scroll">  
                     <div className="flex flex-wrap -mx-2">
@@ -75,15 +72,15 @@ const SignupPage = () => (
                     <div className="mc-field-group mb-6">
                       <label className="text-sm" htmlFor="mce-MMERGE6">Student or Employer? *</label>
                       <select name="MMERGE6" className="mt-1 form-select block w-full" id="mce-MMERGE6" required>
-                        <option value="">- Please Select -</option>
-                        <option value="Student">Student</option>
-                        <option value="Employer">Employer</option>
+                        <option defaultValue="">- Please Select -</option>
+                        <option defaultValue="Student">Student</option>
+                        <option defaultValue="Employer">Employer</option>
                       </select>
                     </div>
 
                     <div className="mc-field-group mb-6">
                       <label className="text-sm" htmlFor="mce-MMERGE7">Referral </label>
-                      <input type="text" value="" name="MMERGE7" className="mt-1 block w-full required email form-input" id="mce-MMERGE7" />
+                      <input type="text" defaultValue="" name="MMERGE7" className="mt-1 block w-full required email form-input" id="mce-MMERGE7" placeholder="Referrer name" />
                     </div>
 
                     <div id="mce-responses" className="clear">
@@ -93,8 +90,8 @@ const SignupPage = () => (
                       <div className="sr-only" aria-hidden="true">
                         <input type="text" name="b_a88839c8bc40d3ba72d83bb3a_3eb474098b" tabIndex="-1" defaultValue=""/>
                       </div>
-                      <div className="clear">
-                        <input type="submit" defaultValue="Sign Up" name="subscribe" id="mc-embedded-subscribe" className="bg-black hover:bg-gray-700 text-white rounded p-4 cursor-pointer" />
+                      <div className="clear text-center">
+                        <input type="submit" defaultValue="Sign Up" name="subscribe" id="mc-embedded-subscribe" className="btn mx-auto" />
                       </div>
                     </div>
                   </form>
