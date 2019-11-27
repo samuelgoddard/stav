@@ -53,6 +53,7 @@ module.exports = {
         suisse: ["SuisseIntl", "Helvetica", "Arial", "sans-serif"],
       },
       maxWidth: {
+        'tinier': '3.2rem',
         'tiny': '4.5rem'
       }
     },
