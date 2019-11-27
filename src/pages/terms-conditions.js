@@ -47,7 +47,7 @@ const TermsConditionsPage = ({ data: { terms }}) => {
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p dangerouslySetInnerHTML={{__html:terms.content}}></p>
+                  <div dangerouslySetInnerHTML={{__html:terms.content}}></div>
                 </motion.div>
               </div>
             </div>

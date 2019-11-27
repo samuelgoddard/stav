@@ -56,12 +56,12 @@ const SignupPage = () => (
                   <div id="mc_embed_signup_scroll">  
                     <div className="flex flex-wrap -mx-2">
                       <div className="w-1/2 px-2 mb-6 mc-field-group">
-                        <label className="text-sm" htmlFor="mce-LNAME">Last Name *</label>
-                        <input type="text" defaultValue="" name="LNAME" className="required form-input mt-1 block w-full" placeholder="First Name" id="mce-LNAME" required />
-                      </div>
-                      <div className="w-1/2 px-2 mb-6 mc-field-group">
                         <label className="text-sm" htmlFor="mce-FNAME">First Name *</label>
                         <input type="text" defaultValue="" name="FNAME" className="required form-input mt-1 block w-full" placeholder="First Name" id="mce-FNAME" required />
+                      </div>
+                      <div className="w-1/2 px-2 mb-6 mc-field-group">
+                        <label className="text-sm" htmlFor="mce-LNAME">Last Name *</label>
+                        <input type="text" defaultValue="" name="LNAME" className="required form-input mt-1 block w-full" placeholder="First Name" id="mce-LNAME" required />
                       </div>
                     </div>
                     <div className="mc-field-group mb-6">

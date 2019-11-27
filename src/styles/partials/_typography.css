@@ -20,10 +20,10 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl;
+  @apply text-xl;
 
   @screen md {
-	  @apply text-3xl;
+	  @apply text-2xl;
   }
 }
 
@@ -53,7 +53,7 @@ h2 {
 
 /* Link */
 .link {
-  @apply text-black underline;
+  @apply text-black no-underline font-suisse text-base;
 
   &:hover, &:focus {
     @apply text-black;
@@ -86,7 +86,7 @@ h2 {
 }
 
 .btn {
-  @apply bg-primary text-white rounded p-4 cursor-pointer no-underline uppercase text-base;
+  @apply bg-primary text-white rounded p-4 cursor-pointer no-underline uppercase text-base font-suisse;
 
   &:hover, &:focus {
     @apply bg-black;
@@ -105,7 +105,7 @@ h2 {
 .content {
   /* Paragraph */
   p {
-    @apply mb-5 leading-relaxed;
+    @apply mb-5 leading-relaxed font-suisse;
 
     &:first-of-type {
       @apply text-lg;

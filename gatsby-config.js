@@ -7,6 +7,13 @@ module.exports = {
     author: `@samuelgoddard`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-153500527-1'",
+        head: true,
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

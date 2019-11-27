@@ -47,7 +47,7 @@ const PrivacyPage = ({ data: { privacy }}) => {
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p dangerouslySetInnerHTML={{__html:privacy.content}}></p>
+                  <div dangerouslySetInnerHTML={{__html:privacy.content}}></div>
                 </motion.div>
               </div>
             </div>

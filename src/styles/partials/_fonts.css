@@ -15,3 +15,12 @@
   font-weight: 700;
   font-style: bold;
 }
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../fonts/SuisseIntl-Book.woff') format('woff'),
+      url('../fonts/SuisseIntl-Book.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: bold;
+}
