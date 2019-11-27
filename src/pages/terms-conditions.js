@@ -25,7 +25,7 @@ const item = {
 const TermsConditionsPage = ({ data: { terms }}) => {
   return (
     <>
-      <SEO title="Privacy" />
+      <SEO meta={terms.seoMetaTags} />
 
       <motion.div
         variants={container}
@@ -65,6 +65,9 @@ export default TermsConditionsPage
 export const query = graphql`
   query TermsQuery {
     terms: datoCmsTermsCondition {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
       title
       content
     }

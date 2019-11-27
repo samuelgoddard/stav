@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 import { motion } from "framer-motion"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
@@ -26,7 +27,7 @@ const item = {
 const IndexPage = ({ data: { home }}) => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO meta={home.seoMetaTags} />
 
       <motion.section
         variants={container}
@@ -38,17 +39,17 @@ const IndexPage = ({ data: { home }}) => {
           <div className="flex flex-wrap items-center md:-mx-6">
             <div className="w-full md:w-1/2 lg:w-7/12 md:px-6 relative z-10 order-2 md:order-1">
               <motion.div variants={item} transition="easeInOut">
-                <h1 className="page-title page-title--large mb-5 lg:mb-8">
+                <h1 className="page-title page-title--large mb-6 lg:mb-8">
                   { home.heading }
                 </h1>
               </motion.div>
 
               <motion.div
-                className="content mb-8 md:mb-12"
+                className="content mb-10 md:mb-12"
                 variants={item}
                 transition="easeInOut"
               >
-                <div className="md:text-lg" dangerouslySetInnerHTML={{__html:home.blurb}}></div>
+                <div className="md:text-lg md:pr-4 lg:pr-16" dangerouslySetInnerHTML={{__html:home.blurb}}></div>
               </motion.div>
 
               <motion.div
@@ -71,6 +72,8 @@ const IndexPage = ({ data: { home }}) => {
           </div>
         </div>
       </motion.section>
+
+      <Footer />
     </>
   )
 }
@@ -80,6 +83,9 @@ export default IndexPage
 export const query = graphql`
   query IndexQuery {
     home: datoCmsHome {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
       heading
       blurb
       image {

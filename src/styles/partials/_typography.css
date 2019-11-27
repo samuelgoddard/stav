@@ -20,11 +20,7 @@ h1 {
 }
 
 h2 {
-  @apply text-xl;
-
-  @screen md {
-	  @apply text-2xl;
-  }
+  @apply text-2xl;
 }
 
 .page-title {
@@ -105,14 +101,14 @@ h2 {
 .content {
   /* Paragraph */
   p {
-    @apply mb-5 leading-relaxed font-suisse;
+    @apply mb-5 leading-relaxed font-suisse leading-snug;
 
     &:first-of-type {
       @apply text-lg;
     }
 
     @screen md {
-      @apply mb-8;
+      @apply mb-8 leading-normal;
     }
   }
 

@@ -25,7 +25,7 @@ const item = {
 const PrivacyPage = ({ data: { privacy }}) => {
   return (
     <>
-      <SEO title="Privacy" />
+      <SEO meta={privacy.seoMetaTags} />
 
       <motion.div
         variants={container}
@@ -65,6 +65,9 @@ export default PrivacyPage
 export const query = graphql`
   query PrivacyQuery {
     privacy: datoCmsPrivacy {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
       title
       content
     }

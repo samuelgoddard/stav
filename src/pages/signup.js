@@ -22,9 +22,9 @@ const item = {
   },
 }
 
-const SignupPage = () => (
+const SignupPage = ({ data: { signup }}) => (
   <>
-    <SEO title="Signup" />
+    <SEO meta={signup.seoMetaTags} />
 
     <motion.div
       variants={container}
@@ -38,7 +38,7 @@ const SignupPage = () => (
               <div className="text-center">
                 <motion.div variants={item} transition="easeInOut">
                   <h1 className="page-title page-title--large mb-5 lg:mb-8">
-                    Stay in the know
+                    {signup.heading}
                   </h1>
                 </motion.div>
 
@@ -47,7 +47,7 @@ const SignupPage = () => (
                   variants={item}
                   transition="easeInOut"
                 >
-                  <p className="md:text-lg">We’re launching soon! Sign up to our mailing list and we’ll send you updates.</p>
+                  <div className="md:text-lg" dangerouslySetInnerHTML={{__html:signup.blurb}}></div>
                 </motion.div>
               </div>
               <motion.div variants={item} transition="easeInOut">
@@ -108,3 +108,15 @@ const SignupPage = () => (
 )
 
 export default SignupPage
+
+export const query = graphql`
+  query SignupQuery {
+    signup: datoCmsSignup {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      heading
+      blurb
+    }
+  }
+`

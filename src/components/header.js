@@ -18,7 +18,7 @@ const Header = () => (
               <li>
                 <Link
                   activeClassName="is--active"
-                  className="link hover:text-primary focus:text-primary mr-10"
+                  className="link hover:text-primary focus:text-primary mr-6 md:mr-10"
                   to="/about"
                 >
                   About

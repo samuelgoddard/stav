@@ -14,7 +14,7 @@ const Footer = () => (
 
         <nav className="w-full sm:w-auto ml-auto">
           <ul className="sm:flex sm:flex-wrap items-center">
-            <li classname="w-full sm:w-auto">
+            <li className="w-full sm:w-auto">
               <Link
                 activeClassName="is--active"
                 className="link hover:text-primary focus:text-primary mr-5 lg:mr-8"
@@ -23,7 +23,7 @@ const Footer = () => (
                 Privacy Policy
               </Link>
             </li>
-            <li classname="w-full sm:w-auto">
+            <li className="w-full sm:w-auto">
               <Link
                 activeClassName="is--active"
                 className="link hover:text-primary focus:text-primary mr-5 lg:mr-8"
@@ -32,7 +32,7 @@ const Footer = () => (
                 Terms &amp; Conditions
               </Link>
             </li>
-            <li classname="w-full sm:w-auto">
+            <li className="w-full sm:w-auto">
               <Link
                 activeClassName="is--active"
                 className="link hover:text-primary focus:text-primary mr-5 lg:mr-8"
@@ -41,7 +41,7 @@ const Footer = () => (
                 About
               </Link>
             </li>
-            <li classname="w-full sm:w-auto">
+            <li className="w-full sm:w-auto">
             <Link
               activeClassName="is--active"
               className="link hover:text-primary focus:text-primary mr-0"

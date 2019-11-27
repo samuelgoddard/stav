@@ -34,3 +34,9 @@
     margin-bottom: -18vw;
   }
 }
+
+.form-input, .form-select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
