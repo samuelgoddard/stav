@@ -61,7 +61,7 @@ const SignupPage = ({ data: { signup }}) => (
                       </div>
                       <div className="w-1/2 px-2 mb-6 mc-field-group">
                         <label className="text-sm" htmlFor="mce-LNAME">Last Name *</label>
-                        <input type="text" defaultValue="" name="LNAME" className="required form-input mt-1 block w-full" placeholder="First Name" id="mce-LNAME" required />
+                        <input type="text" defaultValue="" name="LNAME" className="required form-input mt-1 block w-full" placeholder="Last Name" id="mce-LNAME" required />
                       </div>
                     </div>
                     <div className="mc-field-group mb-6">

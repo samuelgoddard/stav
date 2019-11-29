@@ -41,10 +41,6 @@ h2 {
   @screen md {
     @apply text-5xl;
   }
-  
-  @screen lg {
-    @apply text-6xl;
-  }
 }
 
 /* Link */
