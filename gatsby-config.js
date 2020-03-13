@@ -8,11 +8,11 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        id: "UA-153500527-1",
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
+        trackingId: "UA-153500527-1",
+        head: true,
+        anonymize: true,
       },
     },
     `gatsby-plugin-react-helmet`,
