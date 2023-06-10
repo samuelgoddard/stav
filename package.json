@@ -6,7 +6,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.2",
     "framer-motion": "^1.6.8",
-    "gatsby": "^2.15.15",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-google-tagmanager": "^2.1.26",
